@@ -1,2 +1,2 @@
-Java/Arrays/**
-!Java/Arrays/*.java
+Java/Arrays/.idea/**
+Java/Arrays/out/**
