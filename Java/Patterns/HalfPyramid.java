@@ -1,9 +1,9 @@
-package pattern_questions;
+package Patterns;
 
 public class HalfPyramid {
     public static void main(String[] args) {
-        for(int r=1;r<7;r++){
-            for(int c=1;c<=r;c++){
+        for (int r = 1; r < 7; r++) {
+            for (int c = 1; c <= r; c++) {
                 System.out.print(" * ");
             }
             System.out.println();
