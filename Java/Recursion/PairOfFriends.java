@@ -2,19 +2,19 @@ package recursion;
 
 import java.util.Scanner;
 
-public class SumOfNNaturalNumbers {
+public class PairOfFriends {
 
-    public static int calculateSum(int n) {
-        if(n==1){
-            return 1;
+    public static int waysOfPair(int n) {
+        if(n==1 || n==2){
+            return n;
         }
-        return n+calculateSum(n-1);
+        return waysOfPair(n-1) + ((n-1)*waysOfPair(n-2));
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int number = sc.nextInt();
-        System.out.println(calculateSum(number));
+        System.out.println(waysOfPair(number));
     }
 }
